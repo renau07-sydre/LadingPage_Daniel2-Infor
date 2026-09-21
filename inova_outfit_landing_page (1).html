@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inova Outfit | Sua nova experiência em cosméticos</title>
+    <!-- Tailwind CSS CDN para um visual moderno e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#ff4b82',
+                            lightPink: '#fff0f3',
+                            darkPink: '#e0386d',
+                            dark: '#1a1a1a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-brand-dark font-sans antialiased selection:bg-brand-pink selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black tracking-tight text-brand-dark">Inova<span class="text-brand-pink">Outfit</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#problema" class="hover:text-brand-pink transition">O Problema</a>
+                <a href="#solucao" class="hover:text-brand-pink transition">A Solução</a>
+                <a href="#experiencia" class="hover:text-brand-pink transition">Vídeo Oficial</a>
+                <a href="#depoimentos" class="hover:text-brand-pink transition">Depoimentos</a>
+            </nav>
+            <div>
+                <a href="#cadastro" class="bg-brand-pink hover:bg-brand-darkPink text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg shadow-brand-pink/25 transition-all transform hover:-translate-y-0.5">
+                    Garantir Vaga VIP
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-gradient-to-b from-brand-lightPink/50 to-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <!-- Contador visual de interesse -->
+                        <div class="inline-flex items-center space-x-2 bg-white border border-brand-pink/30 px-4 py-1.5 rounded-full text-xs font-semibold text-brand-dark mb-6 shadow-sm">
+                            <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-pink"></span>
+                            </span>
+                            <span id="counter-badge">Mais de 1.240 pessoas já demonstraram interesse</span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-brand-dark leading-tight mb-6">
+                            A revolução do autocuidado e cosméticos chegou.
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            Chega de produtos genéricos que não entregam o que prometem. Estamos criando fórmulas inteligentes feitas sob medida para realçar sua beleza natural com alta performance.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#cadastro" class="w-full sm:w-auto bg-brand-pink hover:bg-brand-darkPink text-white font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-brand-pink/30 transition-all transform hover:-translate-y-1 text-center">
+                                Quero entrar na Lista de Espera VIP
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Imagem de alta qualidade ilustrando cosméticos de luxo -->
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brand-pink to-brand-dark rounded-3xl blur-lg opacity-30"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Cosméticos Inova Outfit" class="rounded-2xl object-cover w-full h-[380px]" onerror="this.src='https://placehold.co/600x400/ff4b82/ffffff?text=Inova+Outfit+Cosmeticos'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problema" class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-brand-dark mb-4">Você também se frustra com os cosméticos tradicionais?</h2>
+                    <p class="text-gray-600">Identificamos as principais barreiras que o mercado atual ignora e você enfrenta todos os dias.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl shadow-sm">
+                        <div class="w-12 h-12 bg-brand-lightPink text-brand-pink rounded-xl flex items-center justify-center font-bold text-xl mb-6">01</div>
+                        <h3 class="font-bold text-lg text-brand-dark mb-3">Preços abusivos por marcas famosas</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Você paga caro apenas pelo rótulo e marketing corporativo, sem receber ativos realmente potentes.</p>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl shadow-sm">
+                        <div class="w-12 h-12 bg-brand-lightPink text-brand-pink rounded-xl flex items-center justify-center font-bold text-xl mb-6">02</div>
+                        <h3 class="font-bold text-lg text-brand-dark mb-3">Promessas vazias</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Efeitos milagrosos de propaganda que desaparecem na primeira semana de uso contínuo.</p>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl shadow-sm">
+                        <div class="w-12 h-12 bg-brand-lightPink text-brand-pink rounded-xl flex items-center justify-center font-bold text-xl mb-6">03</div>
+                        <h3 class="font-bold text-lg text-brand-dark mb-3">Falta de transparência</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Dificuldade em encontrar fórmulas limpas, seguras, éticas e adaptadas à diversidade real da pele.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solucao" class="py-20 bg-brand-lightPink/30">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1 relative">
+                        <div class="bg-white p-3 rounded-3xl shadow-2xl border border-brand-pink/20">
+                            <!-- Imagem de alta qualidade de rotina de skincare -->
+                            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="Rotina de Skincare Inova Outfit" class="rounded-2xl object-cover w-full h-[380px]" onerror="this.src='https://placehold.co/600x400/ff4b82/ffffff?text=Skincare+Inova'">
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <span class="text-brand-pink font-semibold text-sm tracking-wider uppercase">A Solução Inova Outfit</span>
+                        <h2 class="text-3xl font-bold tracking-tight text-brand-dark mt-2 mb-6">Alta tecnologia e ingredientes limpos ao seu alcance.</h2>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Desenvolvemos um conceito inovador de cosméticos focados em resultados reais, combinando o melhor da ciência dermocosmética com ativos naturais de alta pureza.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-brand-pink flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-700 font-medium"><strong>Fórmulas de alta eficácia:</strong> Concentração ideal de ativos comprovados cientificamente.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-brand-pink flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-700 font-medium"><strong>Preço justo direto ao consumidor:</strong> Sem intermediários caros, entregando máximo valor.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-brand-pink flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-700 font-medium"><strong>Cruelty-free e sustentável:</strong> Embalagens recicláveis e respeito aos animais.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="py-20 bg-brand-dark text-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="text-brand-pink font-semibold text-sm tracking-wider uppercase">Vídeo Oficial do Produto</span>
+                <h2 class="text-3xl font-bold tracking-tight mt-2 mb-4">Veja a apresentação exclusiva da Inova Outfit</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-12">Assista ao vídeo abaixo para entender todos os detalhes da nossa proposta de inovação em cosméticos.</p>
+                
+                <!-- Player de Vídeo embutido do YouTube (ID: KWBPqfWzgc4) -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-800 bg-gray-900 aspect-video max-w-3xl mx-auto flex items-center justify-center">
+                    <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/KWBPqfWzgc4" title="Apresentação Inova Outfit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-brand-pink font-semibold text-sm tracking-wider uppercase">Prova Social Simulada</span>
+                    <h2 class="text-3xl font-bold tracking-tight text-brand-dark mt-2 mb-4">O que dizem os testadores beta iniciais</h2>
+                    <p class="text-gray-600">Feedback coletado durante a fase de testes fechada do nosso laboratório (Conteúdo ilustrativo / fictício para validação de MVP).</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- COMENTÁRIO: Depoimento fictício / ilustrativo para fins de teste de MVP -->
+                    <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                        <div>
+                            <div class="flex text-amber-400 mb-4 text-sm">★★★★★</div>
+                            <p class="text-gray-600 italic mb-6">"Eu participei da fase fechada de testes e a textura do sérum facial é simplesmente incrível. Deixou minha pele hidratada o dia todo sem pesar."</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Camila Mendonça" class="w-12 h-12 rounded-full object-cover border-2 border-brand-pink">
+                            <div>
+                                <h4 class="font-bold text-sm text-brand-dark">Camila Mendonça</h4>
+                                <span class="text-xs text-gray-500">Testadora Beta / São Paulo - SP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COMENTÁRIO: Depoimento fictício / ilustrativo para fins de teste de MVP -->
+                    <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                        <div>
+                            <div class="flex text-amber-400 mb-4 text-sm">★★★★★</div>
+                            <p class="text-gray-600 italic mb-6">"Finalmente uma marca que se preocupa com formulações limpas e preço acessível. Não vejo a hora de comprar o kit completo de skincare."</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Juliana Souza" class="w-12 h-12 rounded-full object-cover border-2 border-brand-pink">
+                            <div>
+                                <h4 class="font-bold text-sm text-brand-dark">Juliana Souza</h4>
+                                <span class="text-xs text-gray-500">Apoiadora da Marca / Rio de Janeiro - RJ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COMENTÁRIO: Depoimento fictício / ilustrativo para fins de teste de MVP -->
+                    <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                        <div>
+                            <div class="flex text-amber-400 mb-4 text-sm">★★★★★</div>
+                            <p class="text-gray-600 italic mb-6">"A proposta de valor é impecável. Se mantiverem o padrão dos protótipos no lançamento oficial, vai virar minha marca favorita."</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=150&q=80" alt="Beatriz Ramos" class="w-12 h-12 rounded-full object-cover border-2 border-brand-pink">
+                            <div>
+                                <h4 class="font-bold text-sm text-brand-dark">Beatriz Ramos</h4>
+                                <span class="text-xs text-gray-500">Influenciadora de Beleza / Curitiba - PR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cadastro" class="py-20 bg-gradient-to-t from-brand-lightPink/50 to-white">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-2xl border border-brand-pink/20">
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-brand-dark mb-2">Garanta seu acesso antecipado</h2>
+                        <p class="text-gray-600 text-sm">Inscreva-se agora para receber ofertas exclusivas e prioridade no dia do lançamento.</p>
+                    </div>
+
+                    <!-- Formulário de captura de lead -->
+                    <form id="lead-form" class="space-y-5">
+                        <div>
+                            <label for="nome" class="block text-sm font-semibold text-gray-700 mb-1">Seu Nome</label>
+                            <input type="text" id="nome" required placeholder="Digite seu nome completo" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-pink focus:border-brand-pink outline-none transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-1">Seu Melhor E-mail</label>
+                            <input type="email" id="email" required placeholder="seu@email.com" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-pink focus:border-brand-pink outline-none transition">
+                        </div>
+                        <div>
+                            <label for="dificuldade" class="block text-sm font-semibold text-gray-700 mb-1">Qual sua maior dificuldade hoje? <span class="text-xs font-normal text-gray-400">(Opcional)</span></label>
+                            <input type="text" id="dificuldade" placeholder="Ex: Preço alto, encontrar tom ideal..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-pink focus:border-brand-pink outline-none transition">
+                        </div>
+                        <button type="submit" class="w-full bg-brand-pink hover:bg-brand-darkPink text-white font-bold py-4 rounded-xl shadow-lg shadow-brand-pink/30 transition-all transform hover:-translate-y-0.5">
+                            Quero entrar na Lista de Espera
+                        </button>
+                    </form>
+
+                    <!-- Mensagem de Sucesso (Oculta por padrão) -->
+                    <div id="success-message" class="hidden text-center py-8">
+                        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 font-bold">✓</div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-2">Obrigado! Você está na lista de espera.</h3>
+                        <p class="text-gray-600 text-sm mb-6">Enviaremos novidades em breve para o seu e-mail cadastrado. Fique de olho!</p>
+                        <button onclick="resetForm()" class="text-sm font-semibold text-brand-pink hover:underline">Cadastrar outro e-mail</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
+            <div class="mb-4 sm:mb-0 text-center sm:text-left">
+                <span class="text-xl font-bold">Inova<span class="text-brand-pink">Outfit</span></span>
+                <p class="text-xs text-gray-400 mt-1">Transformando a beleza com inteligência e inovação.</p>
+            </div>
+            <p class="text-xs text-gray-500 text-center sm:text-right">&copy; 2026 Inova Outfit. Todos os direitos reservados. Projeto MVP - Validação de Ideia.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('lead-form');
+            const successMessage = document.getElementById('success-message');
+            const counterBadge = document.getElementById('counter-badge');
+
+            // Simulação de contador dinâmico com base em valor inicial + armazenamento local
+            let interestCount = 1240;
+            const savedLeads = JSON.parse(localStorage.getItem('inova_outfit_leads') || '[]');
+            interestCount += savedLeads.length;
+            counterBadge.textContent = `Mais de ${interestCount.toLocaleString('pt-BR')} pessoas já demonstraram interesse`;
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const nome = document.getElementById('nome').value;
+                const email = document.getElementById('email').value;
+                const dificuldade = document.getElementById('dificuldade').value;
+
+                const leadData = {
+                    nome,
+                    email,
+                    dificuldade,
+                    timestamp: new Date().toISOString()
+                };
+
+                // Salvando no localStorage e exibindo no console para simular backend
+                console.log('--- NOVO LEAD CAPTURADO (Simulação MVP) ---');
+                console.log(leadData);
+
+                /*
+                 * AQUI ENTRARIA A INTEGRAÇÃO REAL COM:
+                 * - Banco de dados (ex: Supabase, Firebase, PostgreSQL)
+                 * - Ferramenta de e-mail marketing (ex: Mailchimp, ActiveCampaign, Resend)
+                 * Exemplo de requisição fetch real:
+                 * fetch('https://api.seudominio.com/leads', {
+                 *     method: 'POST',
+                 *     headers: { 'Content-Type': 'application/json' },
+                 *     body: JSON.stringify(leadData)
+                 * });
+                 */
+
+                savedLeads.push(leadData);
+                localStorage.setItem('inova_outfit_leads', JSON.stringify(savedLeads));
+
+                // Atualiza contador visual
+                interestCount++;
+                counterBadge.textContent = `Mais de ${interestCount.toLocaleString('pt-BR')} pessoas já demonstraram interesse`;
+
+                // Alterna visibilidade do formulário para mensagem de sucesso
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+            });
+        });
+
+        function resetForm() {
+            const form = document.getElementById('lead-form');
+            const successMessage = document.getElementById('success-message');
+            form.reset();
+            successMessage.classList.add('hidden');
+            form.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
